@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,9 @@
             background-color: #f4f4f4;
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #333;
             text-align: center;
         }
@@ -64,9 +67,19 @@
 
         img {
             display: block;
+            max-width: 100%;
+            height: auto;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
 
         .center {
@@ -111,14 +124,23 @@
             ul {
                 padding-left: 10px;
             }
+
+            img {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Python Learning Roadmap: From Basics to Advanced</h1>
         <div class="abstract">
-            <p><strong>Abstract:</strong> This document provides a comprehensive roadmap for learning Python, covering everything from the basics to advanced topics. Whether you are a complete beginner or looking to deepen your Python knowledge, this guide will help you navigate through the essential concepts, libraries, and frameworks. The roadmap is structured in a progressive manner, ensuring a solid foundation before moving on to more complex topics.</p>
+            <p><strong>Abstract:</strong> This document provides a comprehensive roadmap for learning Python, covering
+                everything from the basics to advanced topics. Whether you are a complete beginner or looking to deepen
+                your Python knowledge, this guide will help you navigate through the essential concepts, libraries, and
+                frameworks. The roadmap is structured in a progressive manner, ensuring a solid foundation before moving
+                on to more complex topics.</p>
         </div>
 
         <h2>Table of Contents</h2>
@@ -136,7 +158,6 @@
 
         <h3 id="introduction-to-python">Introduction to Python</h3>
         <img src="https://i.ibb.co/XWntvZ0/napkin-selection-1.png" alt="Python Learning Stages" />
-
 
         <p><strong>1.1 What is Python?</strong></p>
         <ul>
@@ -191,6 +212,7 @@
 
         <h3 id="intermediate-python">Intermediate Python</h3>
         <img src="https://i.ibb.co/GVy6b2z/napkin-selection-2.png" alt="Python Web Frameworks" />
+
         <p><strong>3.1 Data Structures</strong></p>
         <ul>
             <li>Advanced list operations</li>
@@ -228,6 +250,7 @@
 
         <h3 id="advanced-python">Advanced Python</h3>
         <img src="https://i.ibb.co/mJ1M8Z8/napkin-selection-3.png" alt="Python Projects" />
+
         <p><strong>4.1 Advanced OOP Concepts</strong></p>
         <ul>
             <li>Metaclasses</li>
@@ -296,4 +319,5 @@
         </ul>
     </div>
 </body>
+
 </html>
